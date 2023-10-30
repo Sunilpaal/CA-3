@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    #container {
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    #menu {
+      background-color: hwb(300 13% 78% / 0.951);
+      position: fixed;
+      overflow: hidden;
+      color: #fff;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      
+    }
+    #menu ul {
+      list-style-type: none;
+      padding: 10;
+      
+    }
+    #menu ul li {
+      display: inline;
+      margin: 40px;
+      
+    }
+    #menu ul li a {
+      text-decoration: none;
+      color: #fff;
+      
+
+    }
+    #content {
+      text-align: center;
+      padding: 30px;
+      overflow: hidden;
+      position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#ff0d00;
+ text-transform:uppercase;
+ font-family:Geneva, Arial, Helvetica, sans-serif;
+ text-shadow:2px 1px yellow;
+    }
+    #btone {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+     
+
+    }
+    #bttwo
+    {
+        background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer; 
+      text-decoration: none;
+    }
+    #footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    marquee {
+      font-style: italic;
+    }
+
+    main {
+            padding: 20px;
+        }
+        div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #080694;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a050;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    
+p {
+  
+  font-style: normal;
+  text-align: justify;
+}    
+      
+</style>
+  
+</head>
+<body>
+  <div id="container">
+    <div id="menu">
+      <img src="E:\HTML5\CA 3 Project\lifetime_Nepal1-removebg-preview.png" alt="Logo" width="5%">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="https://www.booking.com/city/np/rummin-dei.en.html?label=rummin-dei-gkT7qZV7BqM1lFQF3W0qDgS528846146549%3Apl%3Ata%3Ap15%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-548626651%3Alp9298609%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c;aid=306395;ws=;gclid=Cj0KCQjwm66pBhDQARIsALIR2zDfNHztpSEMoLbYJ-OWf59MAFWijf8Fbmp0WOfpaLbDx5A2lrED62EaAuDPEALw_wcB">Hotel</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="bacground ">
+      <img src="E:\HTML5\CA 3 Project\Lumbini_Buddhist_pilgrimage_IMG_0678_251.jpg"alt="Norway" width="100%" height="20%">
+    </div>
+     <div id="content">
+        <form method="GET" action="http://www.google.com/search">
+          <a href="http://www.google.com/">
+            <img src="http://www.google.com/logos/Logo_40wht.gif" alt="Google" border="0" align="absmiddle">
+        
+          </a>
+          <input type="text" name="q" size="31" maxlength="255" value="">
+          <input type="hidden" name="hl" value="en">
+          <input type="submit" name="btnG" value="Google Search">
+        </form>
+        <h2>welcome to nepal</h2>
+        <h1>do come & visit lumbini</h1>
+        <h3>"birthplace of buddha"</h3>
+        <button id="btone">learn more</button>
+        <button id="bttwo"><a href="file:///E:/My%20project/signup%20page%20ca%203.html">sign up here</a></button>
+      </div>
+    </div>
+  </div>
+  <Section class="banner" id="Home">
+    </Section>
+    <main>
+    <section class="about"id="About">
+      <h1>About Us</h1>
+      <article>
+        <p>Siddhartha Gautama, the Lord Buddha, was born in 623 B.C. in the famous gardens of Lumbini, which soon became a place of pilgrimage. Among the pilgrims was the Indian emperor Ashoka, who erected one of his commemorative pillars there. The site is now being developed as a Buddhist pilgrimage centre, where the archaeological remains associated with the birth of the Lord Buddha form a central feature.Lumbini is located in the south-central Terai of Nepal, situated in the foothills of the Himalayas. For millions of Buddhists the world over, it evokes a kind of holy sentiment akin to the significance of Jerusalem to Christians and Mecca to Muslims. Lumbini is the place where Lord Buddha - the apostle of peace, and the Light of Asia - was born in 623 B.C. In historical terms, the region is an exquisite treasure-trove of ancient ruins and antiquities, dating back to the pre-Christian era. The site (Lumbini Grove or Sacred Zone) was described as a beautiful garden in the Buddha's time and still retains its legendary charm and beauty. Both the Shakyas and Kolias Clans owned the garden and its tranquil environs at the time of Lord Buddha's birth. King Suddhodana, father of Buddha was of the Shakya Dynasty belonging to the Kshatriya or Warrior Caste.
+
+          For centuries, Buddhists the world over knew that the general area of Lumbini was where the Lord Buddha was born. In the words of those famous Chinese pilgrims of antiquity, Huian Tsang and Faeihan, 'Lumbini -where the Lord was born - is a piece of Heaven on Earth, where one could see the snowy mountains amidst a splendid garden, embedded with stupas and monasteries!' However, the exact location remained uncertain and obscure until 1 December 1886 when a wandering German archaeologist Dr. Alois A. Fuhrer came across a stone pillar and ascertained beyond doubt it was indeed the birthplace of Lord Buddha. Since that day it has become a centre point for hundreds of thousands of pilgrims.</p>
+      </article>
+     </section>
+     <section class="gallery"id="Gallery">
+      <h2>Gallery</h2>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\ashok-acharya-aNU8MnzWhKo-unsplash.jpg">
+      <img src="E:\HTML5\CA 3 Project\ashok-acharya-aNU8MnzWhKo-unsplash.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Mayadevi Temple. </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\kabita-darlami-Fp1bsp6tZYM-unsplash.jpg">
+      <img src="E:\HTML5\CA 3 Project\kabita-darlami-Fp1bsp6tZYM-unsplash.jpg" alt="Forest" width="600" height="200">
+    </a>
+    <div class="desc">Statues of Gautam Buddha.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\dorrell-tibbs-W25hDr4dVRU-unsplash.jpg">
+      <img src="E:\HTML5\CA 3 Project\dorrell-tibbs-W25hDr4dVRU-unsplash.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\tim-van-kempen-mpYKQK3GzSE-unsplash.jpg">
+      <img src="E:\HTML5\CA 3 Project\tim-van-kempen-mpYKQK3GzSE-unsplash.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\sunil-gc--8b6Bfjx6aQ-unsplash.jpg">
+      <img src="E:\HTML5\CA 3 Project\sunil-gc--8b6Bfjx6aQ-unsplash.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Bodhisattva Siddhartha.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\meghraj-neupane-YtEzq-hnv5k-unsplash.jpg">
+      <img src="E:\HTML5\CA 3 Project\meghraj-neupane-YtEzq-hnv5k-unsplash.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Stupa in Lumbini.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\Lumbini_Buddhist_pilgrimage_IMG_0678_30.jpg">
+      <img src="E:\HTML5\CA 3 Project\Lumbini_Buddhist_pilgrimage_IMG_0678_30.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">World Peace Pagoda.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="E:\HTML5\CA 3 Project\MayaDevi_Temple,_Lumbini.jpg">
+      <img src="E:\HTML5\CA 3 Project\MayaDevi_Temple,_Lumbini.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Mayadevi Pond.</div>
+  </div>
+</div>
+     </section><br>
+     <section class="contact"id="Contact">
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="E:\HTML5\CA 3 Project\511fWOz-4+L.jpg" style="width:100%">
+          </div>
+          <div class="column">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">Usa</option>
+                <option value="usa">India</option>
+                <option value="usa">Nepal</option>
+                <option value="usa">Japan</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+     </section>
+    </main>
+     <div id="footer">
+      <marquee behavior="scroll">
+        <h3>The Lord Buddha was born in 623 BC in the sacred area of Lumbini located in the Terai plains of Southern Nepal, testified by the inscription on the Pillar Erected by the Maurayan Emperor Asoka in 249BC. Lumbini is a Buddhist Pilgrimage site in the Rupandehi District of Province No.5 in Nepal.</h3>
+      </marquee>
+    </div>
+   </body>
+</html>
